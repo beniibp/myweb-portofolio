@@ -831,3 +831,39 @@ a:hover::after {
     font-size: 13px;
   }
 }
+
+/* =========================
+   FLOATING BUTTON PREMIUM
+========================= */
+
+.btn-float {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #3aa8ff, #0077ff);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0, 119, 255, 0.4);
+  transition: all 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Efek hover */
+.btn-float:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 119, 255, 0.6);
+}
+
+/* Animasi melayang */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
